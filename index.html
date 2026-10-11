@@ -25,17 +25,7 @@
     <div class="orbit-ring orbit-ring-hero-inner"></div>
   </div>
 
-  <!-- Floating Top Social / Contact Dock -->
-  <aside class="floating-social-dock" aria-label="Social and status links">
-    <a href="tel:+201222286622" class="social-pill" title="اتصل بنا مباشرة">
-      <i class="fa-solid fa-phone"></i>
-      <span class="phone-text" dir="ltr">+20 12 22286622</span>
-    </a>
-    <div class="social-pill status-available">
-      <span class="pulse-dot"></span>
-      <span data-i18n="statusAvailable">متاح لاستقبال الاستشارات</span>
-    </div>
-  </aside>
+
 
   <!-- Floating Vertical Navigation Dock (Reference Style) -->
   <nav class="vertical-dock" aria-label="Quick navigation dock">
@@ -90,6 +80,12 @@
 
       <!-- Action Buttons & Language Switcher -->
       <div class="header-actions">
+        <!-- Direct Phone Call Pill -->
+        <a href="tel:+201222286622" class="header-phone-pill" title="اتصل بنا مباشرة / Direct Call">
+          <i class="fa-solid fa-phone"></i>
+          <span dir="ltr">+20 12 22286622</span>
+        </a>
+
         <!-- Language Switcher Toggle (AR / EN) -->
         <button class="lang-switch-btn" id="langToggle" aria-label="تبديل اللغة / Switch Language" title="تغيير اللغة (AR/EN)">
           <i class="fa-solid fa-globe lang-icon"></i>
@@ -410,12 +406,14 @@
         <p class="section-desc" data-i18n="reviewsDesc">شهادات حقيقية وتوصيات موثقة من أصحاب الأعمال والشركات على صفحتنا الرسمية.</p>
       </div>
 
-      <!-- Rating Summary Banner -->
+      <!-- Rating Summary Banner linking to Facebook Page -->
       <div style="text-align: center;">
-        <div class="reviews-rating-banner">
+        <a href="https://www.facebook.com/Sawers.Accounting.Office" target="_blank" rel="noopener" class="reviews-rating-banner" title="زيارة صفحة فيسبوك الرسمية / Visit our official Facebook page">
+          <i class="fa-brands fa-facebook" style="color: #1877f2; font-size: 1.15rem;"></i>
           <span class="stars-gold">★★★★★</span>
           <span data-i18n="reviewsRatingSummary">⭐ تقييم 5.0 من 5.0 | أكثر من 100 توصية معتمدة على فيسبوك</span>
-        </div>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; opacity: 0.7;"></i>
+        </a>
       </div>
 
       <div class="reviews-grid">
@@ -704,17 +702,17 @@
 
           <!-- Social Media Icons Row -->
           <div class="contact-social-row">
-            <a href="https://wa.me/201222286622" target="_blank" rel="noopener" class="social-circle-btn" title="واتساب">
+            <a href="https://wa.me/201222286622" target="_blank" rel="noopener" class="social-circle-btn" title="واتساب / WhatsApp">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="tel:+201222286622" class="social-circle-btn" title="اتصال مباشر">
+            <a href="https://www.facebook.com/Sawers.Accounting.Office" target="_blank" rel="noopener" class="social-circle-btn" title="فيسبوك / Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="tel:+201222286622" class="social-circle-btn" title="اتصال مباشر / Call">
               <i class="fa-solid fa-phone"></i>
             </a>
-            <a href="mailto:e.saweras1@gmail.com" class="social-circle-btn" title="إيميل">
+            <a href="mailto:e.saweras1@gmail.com" class="social-circle-btn" title="إيميل / Email">
               <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-circle-btn" title="فيسبوك">
-              <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>
         </div>
@@ -785,6 +783,21 @@
         <a href="#showcase" data-i18n="navShowcase">الأعمال</a>
         <a href="#reviews" data-i18n="navReviews">الآراء</a>
         <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+      </div>
+
+      <div class="footer-social-links" style="display: flex; gap: 10px;">
+        <a href="https://www.facebook.com/Sawers.Accounting.Office" target="_blank" rel="noopener" class="social-circle-btn" title="فيسبوك / Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/201222286622" target="_blank" rel="noopener" class="social-circle-btn" title="واتساب / WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+201222286622" class="social-circle-btn" title="اتصال مباشر / Call">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="mailto:e.saweras1@gmail.com" class="social-circle-btn" title="إيميل / Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </div>
 
