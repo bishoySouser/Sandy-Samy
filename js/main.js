@@ -1,9 +1,10 @@
 /**
- * Saweras Tax & Accounting — Interactive UI Script
+ * Saweras Tax & Accounting — Interactive UI & Localization Engine
  * Cosmic Dark Glassmorphism Experience
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initLocalization();
   initNavbarScroll();
   initMobileMenu();
   initScrollSpy();
@@ -13,7 +14,97 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * 1. Navbar Scroll Effect: Adds a subtle blur/border intensification on scroll
+ * 1. Localization Engine (AR / EN)
+ */
+let currentLang = localStorage.getItem('saweras_lang') || 'ar';
+
+function initLocalization() {
+  const toggleBtn = document.getElementById('langToggle');
+
+  // Apply initially saved or default language
+  applyLanguage(currentLang);
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      localStorage.setItem('saweras_lang', currentLang);
+      applyLanguage(currentLang);
+    });
+  }
+}
+
+function applyLanguage(lang) {
+  if (typeof translations === 'undefined' || !translations[lang]) return;
+
+  const t = translations[lang];
+  const html = document.documentElement;
+
+  // Set document direction and language attributes
+  html.lang = lang;
+  html.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Update Page Title
+  if (t.pageTitle) {
+    document.title = t.pageTitle;
+  }
+
+  // Update text for all elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) {
+      el.innerHTML = t[key];
+    }
+  });
+
+  // Update placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (t[key] !== undefined) {
+      el.placeholder = t[key];
+    }
+  });
+
+  // Update title / tooltip attributes
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.getAttribute('data-i18n-title');
+    if (t[key] !== undefined) {
+      el.title = t[key];
+    }
+  });
+
+  // Update language toggle button visual indicator
+  const optAr = document.getElementById('langOptAr');
+  const optEn = document.getElementById('langOptEn');
+  if (optAr && optEn) {
+    if (lang === 'ar') {
+      optAr.classList.add('active');
+      optEn.classList.remove('active');
+    } else {
+      optEn.classList.add('active');
+      optAr.classList.remove('active');
+    }
+  }
+
+  // Update arrow directions in pill buttons
+  document.querySelectorAll('.btn-primary-pill i.fa-arrow-left, .btn-primary-pill i.fa-arrow-right').forEach(icon => {
+    if (lang === 'ar') {
+      icon.className = 'fa-solid fa-arrow-left';
+    } else {
+      icon.className = 'fa-solid fa-arrow-right';
+    }
+  });
+
+  document.querySelectorAll('.card-cta i.fa-chevron-left, .card-cta i.fa-chevron-right').forEach(icon => {
+    if (lang === 'ar') {
+      icon.className = 'fa-solid fa-chevron-left';
+    } else {
+      icon.className = 'fa-solid fa-chevron-right';
+    }
+  });
+}
+
+/**
+ * 2. Navbar Scroll Effect: Adds subtle glass intensification on scroll
  */
 function initNavbarScroll() {
   const header = document.querySelector('header.site-header');
@@ -29,7 +120,7 @@ function initNavbarScroll() {
 }
 
 /**
- * 2. Mobile Navigation Toggle
+ * 3. Mobile Navigation Toggle
  */
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobileNavToggle');
@@ -54,7 +145,7 @@ function initMobileMenu() {
 }
 
 /**
- * 3. ScrollSpy for Vertical Dock & Top Header Links
+ * 4. ScrollSpy for Vertical Dock & Top Header Links
  */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id], div[id="home"]');
@@ -65,7 +156,7 @@ function initScrollSpy() {
 
   function updateActiveSection() {
     let currentId = '';
-    const scrollPosition = window.scrollY + 200;
+    const scrollPosition = window.scrollY + 220;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -102,7 +193,7 @@ function initScrollSpy() {
 }
 
 /**
- * 4. Showcase Tabs Switcher
+ * 5. Showcase Tabs Switcher
  */
 function initShowcaseTabs() {
   const tabButtons = document.querySelectorAll('.tab-btn');
@@ -137,7 +228,7 @@ function initShowcaseTabs() {
 }
 
 /**
- * 5. Interactive Contact Form with Validation & Feedback
+ * 6. Interactive Contact Form with Validation & Feedback
  */
 function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -150,27 +241,32 @@ function initContactForm() {
 
     const name = form.querySelector('#clientName').value.trim();
     const phone = form.querySelector('#clientPhone').value.trim();
-    const service = form.querySelector('#clientService').value;
-    const message = form.querySelector('#clientMessage').value.trim();
+
+    const isAr = document.documentElement.lang === 'ar';
 
     if (!name || !phone) {
-      showAlert('يرجى كتابة الاسم ورقم الهاتف أو الإيميل للتواصل معك.', 'error');
+      const errorMsg = isAr 
+        ? 'يرجى كتابة الاسم ورقم الهاتف أو الإيميل للتواصل معك.' 
+        : 'Please enter your name and phone number or email.';
+      showAlert(errorMsg, 'error');
       return;
     }
 
     const submitBtn = form.querySelector('.btn-submit');
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<span>جاري الإرسال...</span>';
+    submitBtn.innerHTML = `<span>${isAr ? 'جاري الإرسال...' : 'Sending...'}</span>`;
     submitBtn.disabled = true;
 
     // Simulate sending with nice response
     setTimeout(() => {
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
-      showAlert('تم استلام رسالتك بنجاح! سيتواصل معك مستشار مكتب ساويرس في أقرب وقت.', 'success');
+      const successMsg = isAr
+        ? 'تم استلام رسالتك بنجاح! سيتواصل معك مستشار مكتب ساويرس في أقرب وقت.'
+        : 'Your message has been received! A Saweras advisor will contact you shortly.';
+      showAlert(successMsg, 'success');
       form.reset();
 
-      // Clear alert after 7 seconds
       setTimeout(() => {
         if (alertBox) alertBox.style.display = 'none';
       }, 7000);
@@ -186,7 +282,7 @@ function initContactForm() {
 }
 
 /**
- * 6. Subtle Parallax Effect on Iridescent Orbs & Crystals
+ * 7. Parallax Effect on Iridescent Orbs & Crystals
  */
 function initParallaxEffects() {
   const floatingElements = document.querySelectorAll('.floating-orb, .floating-crystal, .contact-decor-crystal');
@@ -197,7 +293,7 @@ function initParallaxEffects() {
     const mouseY = (e.clientY / window.innerHeight) - 0.5;
 
     floatingElements.forEach((el, index) => {
-      const speed = (index + 1) * 15;
+      const speed = (index + 1) * 14;
       const x = mouseX * speed;
       const y = mouseY * speed;
       el.style.transform = `translate(${x}px, ${y}px)`;

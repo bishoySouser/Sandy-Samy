@@ -25,7 +25,7 @@
     <div class="orbit-ring orbit-ring-hero-inner"></div>
   </div>
 
-  <!-- Floating Top Social / Contact Dock (Reference Style) -->
+  <!-- Floating Top Social / Contact Dock -->
   <aside class="floating-social-dock" aria-label="Social and status links">
     <a href="tel:+201222286622" class="social-pill" title="اتصل بنا مباشرة">
       <i class="fa-solid fa-phone"></i>
@@ -33,31 +33,35 @@
     </a>
     <div class="social-pill status-available">
       <span class="pulse-dot"></span>
-      <span>متاح لاستقبال الاستشارات</span>
+      <span data-i18n="statusAvailable">متاح لاستقبال الاستشارات</span>
     </div>
   </aside>
 
   <!-- Floating Vertical Navigation Dock (Reference Style) -->
   <nav class="vertical-dock" aria-label="Quick navigation dock">
-    <a href="#home" class="dock-item active" aria-label="الرئيسية">
+    <a href="#home" class="dock-item active" aria-label="الرئيسية" data-i18n-title="navHome">
       <i class="fa-solid fa-house"></i>
-      <span class="dock-tooltip">الرئيسية</span>
+      <span class="dock-tooltip" data-i18n="navHome">الرئيسية</span>
     </a>
-    <a href="#about" class="dock-item" aria-label="من نحن">
+    <a href="#about" class="dock-item" aria-label="من نحن" data-i18n-title="navAbout">
       <i class="fa-solid fa-user-shield"></i>
-      <span class="dock-tooltip">من نحن</span>
+      <span class="dock-tooltip" data-i18n="navAbout">من نحن</span>
     </a>
-    <a href="#services" class="dock-item" aria-label="خدماتنا">
+    <a href="#services" class="dock-item" aria-label="خدماتنا" data-i18n-title="navServices">
       <i class="fa-solid fa-briefcase"></i>
-      <span class="dock-tooltip">خدماتنا</span>
+      <span class="dock-tooltip" data-i18n="navServices">خدماتنا</span>
     </a>
-    <a href="#showcase" class="dock-item" aria-label="إنجازاتنا">
+    <a href="#showcase" class="dock-item" aria-label="إنجازاتنا" data-i18n-title="navShowcase">
       <i class="fa-solid fa-chart-line"></i>
-      <span class="dock-tooltip">إنجازاتنا</span>
+      <span class="dock-tooltip" data-i18n="navShowcase">إنجازاتنا</span>
     </a>
-    <a href="#contact" class="dock-item" aria-label="تواصل معنا">
+    <a href="#reviews" class="dock-item" aria-label="آراء العملاء" data-i18n-title="navReviews">
+      <i class="fa-solid fa-comments"></i>
+      <span class="dock-tooltip" data-i18n="navReviews">آراء العملاء</span>
+    </a>
+    <a href="#contact" class="dock-item" aria-label="تواصل معنا" data-i18n-title="navContact">
       <i class="fa-solid fa-paper-plane"></i>
-      <span class="dock-tooltip">تواصل معنا</span>
+      <span class="dock-tooltip" data-i18n="navContact">تواصل معنا</span>
     </a>
   </nav>
 
@@ -69,24 +73,33 @@
           <img src="assets/logo-mark.png" alt="Saweras Ribbon Emblem">
         </div>
         <div class="brand-text">
-          <span class="brand-title">SAWERAS</span>
-          <span class="brand-subtitle">TAX & ACCOUNTING</span>
+          <span class="brand-title" data-i18n="brandTitle">SAWERAS</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">TAX & ACCOUNTING</span>
         </div>
       </a>
 
       <!-- Header Navigation Menu -->
       <nav class="header-nav" id="headerNav">
-        <a href="#home" class="active">الرئيسية</a>
-        <a href="#about">من نحن</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#showcase">أعمالنا</a>
-        <a href="#contact">تواصل معنا</a>
+        <a href="#home" class="active" data-i18n="navHome">الرئيسية</a>
+        <a href="#about" data-i18n="navAbout">من نحن</a>
+        <a href="#services" data-i18n="navServices">خدماتنا</a>
+        <a href="#showcase" data-i18n="navShowcase">أعمالنا</a>
+        <a href="#reviews" data-i18n="navReviews">آراء العملاء</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
       </nav>
 
-      <!-- Action Button & Mobile Toggle -->
+      <!-- Action Buttons & Language Switcher -->
       <div class="header-actions">
+        <!-- Language Switcher Toggle (AR / EN) -->
+        <button class="lang-switch-btn" id="langToggle" aria-label="تبديل اللغة / Switch Language" title="تغيير اللغة (AR/EN)">
+          <i class="fa-solid fa-globe lang-icon"></i>
+          <span class="lang-opt active" id="langOptAr">AR</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-opt" id="langOptEn">EN</span>
+        </button>
+
         <a href="#contact" class="btn-primary-pill">
-          <span>طلب استشارة</span>
+          <span data-i18n="ctaConsultation">طلب استشارة</span>
           <i class="fa-solid fa-arrow-left"></i>
         </a>
         <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="القائمة">
@@ -105,41 +118,41 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="sparkle">✦</span>
-            <span>مكتب ساويرس للمحاسبة والضرائب والتأسيس</span>
+            <span data-i18n="heroBadge">مكتب ساويرس للمحاسبة والضرائب والتأسيس</span>
           </div>
 
           <h1 class="hero-title">
-            الريادة في الحلول المالية
+            <span data-i18n="heroTitlePrefix">الريادة في الحلول المالية</span>
             <span class="name-highlight">Saweras Tax & Accounting</span>
           </h1>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="heroDesc">
             شريكك المالي الاستراتيجي منذ 2020. نقدم خدمات محاسبية وضريبية متكاملة وتأسيس الشركات بأعلى معايير الدقة والامتثال القانوني للأفراد والشركات في مصر.
           </p>
 
           <div class="hero-actions">
             <a href="#services" class="btn-primary-pill">
-              <span>استكشف خدماتنا</span>
-              <i class="fa-solid fa-sparkles"></i>
+              <span data-i18n="btnExploreServices">استكشف خدماتنا</span>
+              <i class="fa-solid fa-arrow-left"></i>
             </a>
             <a href="#contact" class="btn-secondary-pill">
               <i class="fa-regular fa-calendar-check"></i>
-              <span>احجز استشارتك الآن</span>
+              <span data-i18n="btnBookConsultation">احجز استشارتك الآن</span>
             </a>
           </div>
 
           <div class="hero-metrics">
             <div class="metric-item">
               <span class="metric-number">94%</span>
-              <span class="metric-label">نسبة رضا وتقييم العملاء</span>
+              <span class="metric-label" data-i18n="metricSatisfaction">نسبة رضا وتقييم العملاء</span>
             </div>
             <div class="metric-item">
               <span class="metric-number">+500</span>
-              <span class="metric-label">شركة وملف ضريبي منجز</span>
+              <span class="metric-label" data-i18n="metricCompleted">شركة وملف ضريبي منجز</span>
             </div>
             <div class="metric-item">
               <span class="metric-number">2020</span>
-              <span class="metric-label">خبرة متواصلة ومعتمدة</span>
+              <span class="metric-label" data-i18n="metricExperience">خبرة متواصلة ومعتمدة</span>
             </div>
           </div>
         </div>
@@ -148,7 +161,7 @@
         <div class="hero-visual">
           <div class="visual-portal"></div>
 
-          <!-- Floating 3D Cosmic Orb (Reference Style) -->
+          <!-- Floating 3D Cosmic Orb -->
           <div class="floating-asset floating-orb" title="Cosmic Orb">
             <img src="assets/cosmic-orb.jpg" alt="Cosmic Glowing Orb">
           </div>
@@ -158,7 +171,7 @@
             <img src="assets/hero-advisor.jpg" alt="Saweras Financial Advisor">
           </div>
 
-          <!-- Floating 3D Crystal Gem (Reference Style) -->
+          <!-- Floating 3D Crystal Gem -->
           <div class="floating-asset floating-crystal" title="Iridescent Crystal Prism">
             <img src="assets/crystal.jpg" alt="Luminous 3D Crystal">
           </div>
@@ -169,8 +182,8 @@
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="chip-text">
-              <span class="chip-val">تقييم 94%</span>
-              <span class="chip-sub">أعلى تقييم موثوقية في مصر</span>
+              <span class="chip-val" data-i18n="chipRating">تقييم 94%</span>
+              <span class="chip-sub" data-i18n="chipSub">أعلى تقييم موثوقية في مصر</span>
             </div>
           </div>
         </div>
@@ -182,33 +195,33 @@
          ========================================================================== -->
     <section id="about">
       <div class="section-header">
-        <span class="section-tag">من نحن</span>
-        <h2 class="section-title">شريكك الموثوق <span class="text-gradient">للنمو والامتثال المالي</span></h2>
-        <p class="section-desc">نمكن رواد الأعمال والشركات من التركيز على تطوير أعمالهم بينما نتولى نحن إدارة الجوانب المحاسبية والضريبية بدقة واحترافية متناهية.</p>
+        <span class="section-tag" data-i18n="aboutTag">من نحن</span>
+        <h2 class="section-title" data-i18n="aboutTitle">شريكك الموثوق <span class="text-gradient">للنمو والامتثال المالي</span></h2>
+        <p class="section-desc" data-i18n="aboutDesc">نمكن رواد الأعمال والشركات من التركيز على تطوير أعمالهم بينما نتولى نحن إدارة الجوانب المحاسبية والضريبية بدقة واحترافية متناهية.</p>
       </div>
 
       <div class="about-grid">
         <div class="about-card">
-          <h3>منذ عام 2020 نصنع الفارق في أعمالك</h3>
-          <p>
+          <h3 data-i18n="aboutCardTitle">منذ عام 2020 نصنع الفارق في أعمالك</h3>
+          <p data-i18n="aboutCardP1">
             يقدم مكتب ساويرس (Saweras Tax & Accounting) حزمة متكاملة من الخدمات المحاسبية والاستشارات الضريبية وتأسيس الكيانات القانونية وفقاً لأحدث القوانين والأنظمة المعمول بها في جمهورية مصر العربية.
           </p>
           <ul class="about-features-list">
             <li>
               <span class="check-icon"><i class="fa-solid fa-check"></i></span>
-              <span>فريق محاسبي واستشاري مرخص وذو كفاءة استثنائية</span>
+              <span data-i18n="aboutFeature1">فريق محاسبي واستشاري مرخص وذو كفاءة استثنائية</span>
             </li>
             <li>
               <span class="check-icon"><i class="fa-solid fa-check"></i></span>
-              <span>امتثال ضريبي كامل يجنبك أي غرامات أو تأخيرات</span>
+              <span data-i18n="aboutFeature2">امتثال ضريبي كامل يجنبك أي غرامات أو تأخيرات</span>
             </li>
             <li>
               <span class="check-icon"><i class="fa-solid fa-check"></i></span>
-              <span>سرية تامة لحساباتك وبيانات شركتك المالية</span>
+              <span data-i18n="aboutFeature3">سرية تامة لحساباتك وبيانات شركتك المالية</span>
             </li>
             <li>
               <span class="check-icon"><i class="fa-solid fa-check"></i></span>
-              <span>تقارير مالية دورية ولوحات تحليلات تساعدك في اتخاذ قراراتك</span>
+              <span data-i18n="aboutFeature4">تقارير مالية دورية ولوحات تحليلات تساعدك في اتخاذ قراراتك</span>
             </li>
           </ul>
         </div>
@@ -216,23 +229,23 @@
         <div class="about-stats-grid">
           <div class="stat-box">
             <span class="stat-icon"><i class="fa-solid fa-building-columns"></i></span>
-            <h4>500+</h4>
-            <p>شركة ومؤسسة مسجلة ومُدارة</p>
+            <h4 data-i18n="aboutStat1Title">+500</h4>
+            <p data-i18n="aboutStat1Desc">شركة ومؤسسة مسجلة ومُدارة</p>
           </div>
           <div class="stat-box">
             <span class="stat-icon"><i class="fa-solid fa-award"></i></span>
-            <h4>94%</h4>
-            <p>معدل رضا وسعادة العملاء</p>
+            <h4 data-i18n="aboutStat2Title">94%</h4>
+            <p data-i18n="aboutStat2Desc">معدل رضا وسعادة العملاء</p>
           </div>
           <div class="stat-box">
             <span class="stat-icon"><i class="fa-solid fa-scale-balanced"></i></span>
-            <h4>100%</h4>
-            <p>مطابقة للمعايير الضريبية المصرية</p>
+            <h4 data-i18n="aboutStat3Title">100%</h4>
+            <p data-i18n="aboutStat3Desc">مطابقة للمعايير الضريبية المصرية</p>
           </div>
           <div class="stat-box">
             <span class="stat-icon"><i class="fa-solid fa-headset"></i></span>
-            <h4>24/7</h4>
-            <p>دعم استشاري واستجابة فورية</p>
+            <h4 data-i18n="aboutStat4Title">24/7</h4>
+            <p data-i18n="aboutStat4Desc">دعم استشاري واستجابة فورية</p>
           </div>
         </div>
       </div>
@@ -243,9 +256,9 @@
          ========================================================================== -->
     <section id="services">
       <div class="section-header">
-        <span class="section-tag">خدماتنا</span>
-        <h2 class="section-title">حلول محاسبية وضريبية <span class="text-gradient">شاملة ومتطورة</span></h2>
-        <p class="section-desc">نوفر باقة خدمات متخصصة صُممت لتلبية احتياجات الشركات الناشئة، المتوسطة، والمؤسسات الكبرى.</p>
+        <span class="section-tag" data-i18n="servicesTag">خدماتنا</span>
+        <h2 class="section-title" data-i18n="servicesTitle">حلول محاسبية وضريبية <span class="text-gradient">شاملة ومتطورة</span></h2>
+        <p class="section-desc" data-i18n="servicesDesc">نوفر باقة خدمات متخصصة صُممت لتلبية احتياجات الشركات الناشئة، المتوسطة، والمؤسسات الكبرى.</p>
       </div>
 
       <div class="services-grid">
@@ -254,16 +267,16 @@
           <div class="service-icon-wrap">
             <i class="fa-solid fa-calculator"></i>
           </div>
-          <h4>أعمال المحاسبة</h4>
-          <p class="service-summary">إدارة كاملة لدفاترك وسجلاتك المحاسبية وفقاً لمعايير المحاسبة المصرية والدولية.</p>
+          <h4 data-i18n="srv1Title">أعمال المحاسبة</h4>
+          <p class="service-summary" data-i18n="srv1Summary">إدارة كاملة لدفاترك وسجلاتك المحاسبية وفقاً لمعايير المحاسبة المصرية والدولية.</p>
           <ul>
-            <li><span class="bullet">✔</span> تسجيل العمليات والقيود اليومية</li>
-            <li><span class="bullet">✔</span> إعداد ومراجعة القوائم المالية</li>
-            <li><span class="bullet">✔</span> إعداد الميزانيات التقديرية والعمومية</li>
-            <li><span class="bullet">✔</span> التسويات البنكية ومطابقة الحسابات</li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv1Li1">تسجيل العمليات والقيود اليومية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv1Li2">إعداد ومراجعة القوائم المالية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv1Li3">إعداد الميزانيات التقديرية والعمومية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv1Li4">التسويات البنكية ومطابقة الحسابات</span></li>
           </ul>
           <a href="#contact" class="card-cta">
-            <span>طلب الخدمة</span>
+            <span data-i18n="srvOrder">طلب الخدمة</span>
             <i class="fa-solid fa-chevron-left"></i>
           </a>
         </div>
@@ -273,16 +286,16 @@
           <div class="service-icon-wrap">
             <i class="fa-solid fa-building"></i>
           </div>
-          <h4>تأسيس الشركات</h4>
-          <p class="service-summary">إجراءات سريعة لتأسيس كيانك التجاري من البداية وحتى استلام كافة التراخيص الرسمية.</p>
+          <h4 data-i18n="srv2Title">تأسيس الشركات</h4>
+          <p class="service-summary" data-i18n="srv2Summary">إجراءات سريعة لتأسيس كيانك التجاري من البداية وحتى استلام كافة التراخيص الرسمية.</p>
           <ul>
-            <li><span class="bullet">✔</span> شركات الأموال، الأشخاص، والفردية</li>
-            <li><span class="bullet">✔</span> استخراج وتجديد السجل التجاري</li>
-            <li><span class="bullet">✔</span> إصدار البطاقة الضريبية والملف الضريبي</li>
-            <li><span class="bullet">✔</span> فتح الملفات التأمينية وإجراءات العمل</li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv2Li1">شركات الأموال، الأشخاص، والفردية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv2Li2">استخراج وتجديد السجل التجاري</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv2Li3">إصدار البطاقة الضريبية والملف الضريبي</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv2Li4">فتح الملفات التأمينية وإجراءات العمل</span></li>
           </ul>
           <a href="#contact" class="card-cta">
-            <span>طلب الخدمة</span>
+            <span data-i18n="srvOrder">طلب الخدمة</span>
             <i class="fa-solid fa-chevron-left"></i>
           </a>
         </div>
@@ -292,16 +305,16 @@
           <div class="service-icon-wrap">
             <i class="fa-solid fa-file-invoice-dollar"></i>
           </div>
-          <h4>خدمات الضرائب</h4>
-          <p class="service-summary">تخطيط ومتابعة ضريبية احترافية تحميك من المخاطر وتضمن حقك القانوني.</p>
+          <h4 data-i18n="srv3Title">خدمات الضرائب</h4>
+          <p class="service-summary" data-i18n="srv3Summary">تخطيط ومتابعة ضريبية احترافية تحميك من المخاطر وتضمن حقك القانوني.</p>
           <ul>
-            <li><span class="bullet">✔</span> إعداد وتقديم الإقرارات الضريبية الدورية</li>
-            <li><span class="bullet">✔</span> متابعة وفحص ملفات ضريبة القيمة المضافة</li>
-            <li><span class="bullet">✔</span> ضرائب الدخل، كسب العمل، والدمغة</li>
-            <li><span class="bullet">✔</span> تمثيل الشركات في لجان الطعن والفحص</li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv3Li1">إعداد وتقديم الإقرارات الضريبية الدورية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv3Li2">متابعة وفحص ملفات ضريبة القيمة المضافة</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv3Li3">ضرائب الدخل، كسب العمل، والدمغة</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv3Li4">تمثيل الشركات في لجان الطعن والفحص</span></li>
           </ul>
           <a href="#contact" class="card-cta">
-            <span>طلب الخدمة</span>
+            <span data-i18n="srvOrder">طلب الخدمة</span>
             <i class="fa-solid fa-chevron-left"></i>
           </a>
         </div>
@@ -311,16 +324,16 @@
           <div class="service-icon-wrap">
             <i class="fa-solid fa-chart-pie"></i>
           </div>
-          <h4>الاستشارات المالية</h4>
-          <p class="service-summary">رؤى مالية استراتيجية لدعم اتخاذ القرارات التوسعية وتعظيم الأرباح.</p>
+          <h4 data-i18n="srv4Title">الاستشارات المالية</h4>
+          <p class="service-summary" data-i18n="srv4Summary">رؤى مالية استراتيجية لدعم اتخاذ القرارات التوسعية وتعظيم الأرباح.</p>
           <ul>
-            <li><span class="bullet">✔</span> تحليل الأداء المالي والتدفق النقدي</li>
-            <li><span class="bullet">✔</span> إعداد دراسات الجدوى الاقتصادية</li>
-            <li><span class="bullet">✔</span> استشارات الاستثمار وهيكلة رأس المال</li>
-            <li><span class="bullet">✔</span> تقييم المشروعات وخفض التكاليف</li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv4Li1">تحليل الأداء المالي والتدفق النقدي</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv4Li2">إعداد دراسات الجدوى الاقتصادية</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv4Li3">استشارات الاستثمار وهيكلة رأس المال</span></li>
+            <li><span class="bullet">✔</span> <span data-i18n="srv4Li4">تقييم المشروعات وخفض التكاليف</span></li>
           </ul>
           <a href="#contact" class="card-cta">
-            <span>طلب الخدمة</span>
+            <span data-i18n="srvOrder">طلب الخدمة</span>
             <i class="fa-solid fa-chevron-left"></i>
           </a>
         </div>
@@ -332,20 +345,20 @@
          ========================================================================== -->
     <section id="showcase" class="showcase-section">
       <div class="section-header">
-        <span class="section-tag">أحدث أعمالنا</span>
-        <h2 class="section-title">نماذج من حلولنا <span class="text-gradient">الرقمية والمالية</span></h2>
-        <p class="section-desc">اطلع على نماذج من لوحات التحليلات المالية وتقارير الامتثال الضريبي وتأسيس المشروعات التي ننفذها لعملائنا.</p>
+        <span class="section-tag" data-i18n="showcaseTag">أحدث أعمالنا</span>
+        <h2 class="section-title" data-i18n="showcaseTitle">نماذج من حلولنا <span class="text-gradient">الرقمية والمالية</span></h2>
+        <p class="section-desc" data-i18n="showcaseDesc">اطلع على نماذج من لوحات التحليلات المالية وتقارير الامتثال الضريبي وتأسيس المشروعات التي ننفذها لعملائنا.</p>
       </div>
 
       <!-- Category Filter Tabs -->
       <div class="showcase-tabs">
-        <button class="tab-btn active" data-filter="all">الكل</button>
-        <button class="tab-btn" data-filter="analytics">التحليلات والضرائب</button>
-        <button class="tab-btn" data-filter="corporate">تأسيس الشركات</button>
-        <button class="tab-btn" data-filter="accounting">القوائم المالية</button>
+        <button class="tab-btn active" data-filter="all" data-i18n="tabAll">الكل</button>
+        <button class="tab-btn" data-filter="analytics" data-i18n="tabAnalytics">التحليلات والضرائب</button>
+        <button class="tab-btn" data-filter="corporate" data-i18n="tabCorporate">تأسيس الشركات</button>
+        <button class="tab-btn" data-filter="accounting" data-i18n="tabAccounting">القوائم المالية</button>
       </div>
 
-      <!-- 3D Perspective Card Deck (Matching Reference) -->
+      <!-- 3D Perspective Card Deck -->
       <div class="showcase-stage">
         <div class="showcase-deck">
           <!-- Card Left -->
@@ -354,9 +367,9 @@
               <img src="assets/crystal.jpg" alt="Financial Balance Model">
             </div>
             <div class="card-content">
-              <span class="card-tag">الميزانيات والقوائم</span>
-              <h3 class="card-title">إعداد القوائم السنوية</h3>
-              <p class="card-desc">تدقيق مالي شامل ومطابقة الإيرادات والتكاليف وتحديد صافي الأرباح بدقة متناهية.</p>
+              <span class="card-tag" data-i18n="shw1Tag">الميزانيات والقوائم</span>
+              <h3 class="card-title" data-i18n="shw1Title">إعداد القوائم السنوية</h3>
+              <p class="card-desc" data-i18n="shw1Desc">تدقيق مالي شامل ومطابقة الإيرادات والتكاليف وتحديد صافي الأرباح بدقة متناهية.</p>
             </div>
           </div>
 
@@ -366,9 +379,9 @@
               <img src="assets/dashboard-mockup.jpg" alt="Tax & Corporate Analytics UI">
             </div>
             <div class="card-content">
-              <span class="card-tag">لوحة تحليلات ساويرس</span>
-              <h3 class="card-title">منظومة التقارير والضرائب الرقمية</h3>
-              <p class="card-desc">لوحة تحكم ذكية ترصد الإقرارات الضريبية، الفواتير الإلكترونية، والتدفقات النقدية اللحظية لشركتك.</p>
+              <span class="card-tag" data-i18n="shw2Tag">لوحة تحليلات ساويرس</span>
+              <h3 class="card-title" data-i18n="shw2Title">منظومة التقارير والضرائب الرقمية</h3>
+              <p class="card-desc" data-i18n="shw2Desc">لوحة تحكم ذكية ترصد الإقرارات الضريبية، الفواتير الإلكترونية، والتدفقات النقدية اللحظية لشركتك.</p>
             </div>
           </div>
 
@@ -378,9 +391,246 @@
               <img src="assets/cosmic-orb.jpg" alt="Corporate Formation Setup">
             </div>
             <div class="card-content">
-              <span class="card-tag">الكيانات القانونية</span>
-              <h3 class="card-title">تأسيس شركات LLC</h3>
-              <p class="card-desc">إنجاز إجراءات التأسيس في أسرع وقت مع استخراج السجل والبطاقة الضريبية والتأمينات.</p>
+              <span class="card-tag" data-i18n="shw3Tag">الكيانات القانونية</span>
+              <h3 class="card-title" data-i18n="shw3Title">تأسيس شركات LLC</h3>
+              <p class="card-desc" data-i18n="shw3Desc">إنجاز إجراءات التأسيس في أسرع وقت مع استخراج السجل والبطاقة الضريبية والتأمينات.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         REVIEWS & RECOMMENDATIONS SECTION (Authentic Facebook Reviews)
+         ========================================================================== -->
+    <section id="reviews" class="reviews-section">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="reviewsTag">آراء وتقييمات العملاء</span>
+        <h2 class="section-title" data-i18n="reviewsTitle">ماذا يقول شركاؤنا عن <span class="text-gradient">مكتب ساويرس؟</span></h2>
+        <p class="section-desc" data-i18n="reviewsDesc">شهادات حقيقية وتوصيات موثقة من أصحاب الأعمال والشركات على صفحتنا الرسمية.</p>
+      </div>
+
+      <!-- Rating Summary Banner -->
+      <div style="text-align: center;">
+        <div class="reviews-rating-banner">
+          <span class="stars-gold">★★★★★</span>
+          <span data-i18n="reviewsRatingSummary">⭐ تقييم 5.0 من 5.0 | أكثر من 100 توصية معتمدة على فيسبوك</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1: Angi Samir Takla (Partheno Media) -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev1Text">Very expert and honest. Thanks Saweras and thanks Miss Ereeny for your support 🌹🌸 Keep it up ⭐⭐⭐</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev1Reply">شكراً لثقة شركة Partheno Advertising Agency ودايماً عند حسن ظنكم ودعمكم بكافة الاستشارات.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">AT</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev1Author">Angi Samir Takla</span>
+              <span class="author-role" data-i18n="rev1Role">Partheno Media Advertising Agency</span>
+              <span class="author-date" data-i18n="rev1Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Daniel Mazhar Mashriki (Masn3 El Forma Gym) -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev2Text">شركة تحترم بكل معنى من أول التوجيه للنصيحة للتنفيذ في أسرع وقت. أستاذة إيريني حد أمين وتديلو ثقة كبيرة وانت مطمئن. Highly recommend ❤️</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev2Reply">شكراً لثقتكم فينا Masn3 El Forma Gym ومن نجاح لنجاح دايماً.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">DM</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev2Author">Daniel Mazhar Mashriki</span>
+              <span class="author-role" data-i18n="rev2Role">Masn3 El Forma Gym</span>
+              <span class="author-date" data-i18n="rev2Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Mina Adel (Tourism Company) -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev3Text">تجربتي مع مكتب ساويرس كانت مميزة ومرضية للغاية. يترأس المكتب الأستاذة إيريني، وهو من أفضل المكاتب بالقاهرة. تميزوا بخدمات متكاملة واحترافية لتأسيس الشركات والدعم الدائم للإجابة على كل استفسار.</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev3Reply">شكراً على تقييمك الإيجابي الأكثر من رائع وتمنياتنا بالتوفيق في شركتكم السياحية الجديدة.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">MA</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev3Author">مينا عادل (Mina Adel)</span>
+              <span class="author-role" data-i18n="rev3Role">شركة خدمات سياحية</span>
+              <span class="author-date" data-i18n="rev3Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4: Mohamed Magdi -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev4Text">من المكاتب المحترمة بجد وقمة في الذوق في كل حاجة، والتعامل والشغل والفحص الضريبي والإقرارات وملتزمين بكل التعليمات الجديدة. شكراً أستاذة إيريني علي تعبكم ودعمكم 🙏</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev4Reply">سعداء جداً بخدمتكم وتوفير أعلى معايير الالتزام الضريبي لأعمالكم.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">MM</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev4Author">محمد مجدي (Mohamed Magdi)</span>
+              <span class="author-role" data-i18n="rev4Role">شريك أعمال</span>
+              <span class="author-date" data-i18n="rev4Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5: ELITE Stores -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev5Text">أ/ إيريني من الشخصيات المحترمة اللي فاهمة شغلها كويس جداً، مزيد من النجاح والتوفيق ومكملين دايماً سوا ❤️</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev5Reply">يسعدنا ويشرفنا دعم محلات ELITE ونفخر بشراكتنا المستمرة.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">EL</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev5Author">مجموعة إيليت (ELITE)</span>
+              <span class="author-role" data-i18n="rev5Role">محلات وسلسلة ELITE</span>
+              <span class="author-date" data-i18n="rev5Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6: Boules Botros (Anna Academic Nursery) -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev6Text">من المكاتب المحترمة في التعامل والثقة الكاملة مع العملاء. أستاذة إيريني قمة في المهنية والاحترافية.</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev6Reply">شكراً لثقتكم وتشجيعكم ونفضل دايماً في تقدم ونجاح مع بعض Anna Academic Nursery.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">BB</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev6Author">بولس بطرس (Boules Botros)</span>
+              <span class="author-role" data-i18n="rev6Role">Anna Academic Nursery</span>
+              <span class="author-date" data-i18n="rev6Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 7: Nova Veta -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev7Text">من المكاتب المهتمة بالعملاء ومتابعتهم والالتزام بمواعيد الإقرارات الضريبية الشهرية والسنوية وعلى علم بكافة القوانين الجديدة. شكراً لتعبكم معانا وصبركم على استفساراتنا.</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev7Reply">واجبنا دايماً توفير راحة البال والالتزام القانوني الكامل لعملائنا.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">NV</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev7Author">نوفا فيتا (Nova Veta)</span>
+              <span class="author-role" data-i18n="rev7Role">مؤسسة تجارية</span>
+              <span class="author-date" data-i18n="rev7Date">نوفمبر 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 8: Bishoy Atef -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="fb-rec-badge">
+              <i class="fa-brands fa-facebook"></i>
+              <span data-i18n="recBadge">يوصي بمكتب ساويرس للمحاسبة</span>
+            </span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <div class="review-body">
+            <span class="quote-mark">“</span>
+            <p class="review-text" data-i18n="rev8Text">من أحسن الشركات اللي ممكن الواحد يتعامل معاها، عندهم خبرة كبيرة جداً ومتابعتهم للعملاء بشكل منتظم.</p>
+          </div>
+          <div class="official-reply-box">
+            <span class="reply-prefix" data-i18n="clientReplyPrefix">رد مكتب ساويرس:</span>
+            <span data-i18n="rev8Reply">شرفنا جداً بمساعدة ودعم حضرتك في كافة الاستشارات المحاسبية.</span>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">BA</div>
+            <div class="author-info">
+              <span class="author-name" data-i18n="rev8Author">بيشوي عاطف (Bishoy Atef)</span>
+              <span class="author-role" data-i18n="rev8Role">عميل استشاري</span>
+              <span class="author-date" data-i18n="rev8Date">نوفمبر 2023</span>
             </div>
           </div>
         </div>
@@ -392,9 +642,9 @@
          ========================================================================== -->
     <section id="contact" class="contact-section">
       <div class="section-header">
-        <span class="section-tag">تواصل معنا</span>
-        <h2 class="section-title">جاهزون لبدء <span class="text-gradient">رحلة نجاحك المالي؟</span></h2>
-        <p class="section-desc">تواصل معنا اليوم لحجز جلستك الاستشارية وسيقوم مستشارنا المالي بالرد عليك فوراً.</p>
+        <span class="section-tag" data-i18n="contactTag">تواصل معنا</span>
+        <h2 class="section-title" data-i18n="contactTitle">جاهزون لبدء <span class="text-gradient">رحلة نجاحك المالي؟</span></h2>
+        <p class="section-desc" data-i18n="contactDesc">تواصل معنا اليوم لحجز جلستك الاستشارية وسيقوم مستشارنا المالي بالرد عليك فوراً.</p>
       </div>
 
       <div class="contact-card-glass">
@@ -406,8 +656,8 @@
         <!-- Left Side: Contact Information (Get in touch) -->
         <div class="contact-info-side">
           <div class="contact-info-header">
-            <h3>تواصل مع مستشارك</h3>
-            <p>مكتب ساويرس للمحاسبة والضرائب — يسعدنا استقبالكم في مقرنا أو تقديم الاستشارة عبر الهاتف والإنترنت.</p>
+            <h3 data-i18n="contactSideTitle">تواصل مع مستشارك</h3>
+            <p data-i18n="contactSideDesc">مكتب ساويرس للمحاسبة والضرائب — يسعدنا استقبالكم في مقرنا أو تقديم الاستشارة عبر الهاتف والإنترنت.</p>
           </div>
 
           <div class="contact-items">
@@ -416,8 +666,8 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div class="row-text">
-                <span class="label">العنوان والمقر:</span>
-                <span class="val">٤ عمار بن ياسر، أول سور الكلية الحربية من ناحية نادي الطيران، الدور الأول، مكتب ١٠٤ - النزهة، القاهرة</span>
+                <span class="label" data-i18n="lblAddress">العنوان والمقر:</span>
+                <span class="val" data-i18n="valAddress">٤ عمار بن ياسر، أول سور الكلية الحربية من ناحية نادي الطيران، الدور الأول، مكتب ١٠٤ - النزهة، القاهرة</span>
               </div>
             </div>
 
@@ -426,7 +676,7 @@
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="row-text">
-                <span class="label">الهاتف المباشر:</span>
+                <span class="label" data-i18n="lblPhone">الهاتف المباشر:</span>
                 <span class="val"><a href="tel:+201222286622" class="phone-link" dir="ltr">+20 12 22286622</a></span>
               </div>
             </div>
@@ -436,7 +686,7 @@
                 <i class="fa-solid fa-envelope"></i>
               </div>
               <div class="row-text">
-                <span class="label">البريد الإلكتروني:</span>
+                <span class="label" data-i18n="lblEmail">البريد الإلكتروني:</span>
                 <span class="val"><a href="mailto:e.saweras1@gmail.com">e.saweras1@gmail.com</a></span>
               </div>
             </div>
@@ -446,8 +696,8 @@
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div class="row-text">
-                <span class="label">ساعات العمل الرسمية:</span>
-                <span class="val">من 10 صباحًا حتى 5 مساءً (الجمعة والسبت إجازة)</span>
+                <span class="label" data-i18n="lblHours">ساعات العمل الرسمية:</span>
+                <span class="val" data-i18n="valHours">من 10 صباحًا حتى 5 مساءً (الجمعة والسبت إجازة)</span>
               </div>
             </div>
           </div>
@@ -463,8 +713,8 @@
             <a href="mailto:e.saweras1@gmail.com" class="social-circle-btn" title="إيميل">
               <i class="fa-solid fa-envelope"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-circle-btn" title="لينكد إن">
-              <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-circle-btn" title="فيسبوك">
+              <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>
         </div>
@@ -472,39 +722,39 @@
         <!-- Right Side: Contact Form (Send me a message) -->
         <div class="contact-form-side">
           <div class="form-header">
-            <h4>أرسل استفسارك</h4>
-            <p>املأ البيانات التالية وسنعاود الاتصال بك خلال ساعات العمل.</p>
+            <h4 data-i18n="formTitle">أرسل استفسارك</h4>
+            <p data-i18n="formDesc">املأ البيانات التالية وسنعاود الاتصال بك خلال ساعات العمل.</p>
           </div>
 
           <form id="contactForm" class="glass-form" novalidate>
             <div class="form-group">
-              <label for="clientName">الاسم بالكامل</label>
-              <input type="text" id="clientName" class="input-glass" placeholder="مثال: أحمد محمود" required>
+              <label for="clientName" data-i18n="lblName">الاسم بالكامل</label>
+              <input type="text" id="clientName" class="input-glass" placeholder="مثال: أحمد محمود" data-i18n-placeholder="placeholderName" required>
             </div>
 
             <div class="form-group">
-              <label for="clientPhone">رقم الهاتف / الواتساب أو البريد الإلكتروني</label>
-              <input type="text" id="clientPhone" class="input-glass" placeholder="مثال: 01222286622" required>
+              <label for="clientPhone" data-i18n="lblPhoneEmail">رقم الهاتف / الواتساب أو البريد الإلكتروني</label>
+              <input type="text" id="clientPhone" class="input-glass" placeholder="مثال: 01222286622" data-i18n-placeholder="placeholderPhone" required>
             </div>
 
             <div class="form-group">
-              <label for="clientService">الخدمة المطلوبة</label>
+              <label for="clientService" data-i18n="lblService">الخدمة المطلوبة</label>
               <select id="clientService" class="select-glass">
-                <option value="ضرائب">الخدمات الضريبية والإقرارات</option>
-                <option value="محاسبة">أعمال المحاسبة والقوائم المالية</option>
-                <option value="تأسيس">تأسيس الشركات والسجل التجاري</option>
-                <option value="استشارات">دراسات جدوى واستشارات مالية</option>
-                <option value="أخرى">استشارة أخرى</option>
+                <option value="ضرائب" data-i18n="optTax">الخدمات الضريبية والإقرارات</option>
+                <option value="محاسبة" data-i18n="optAcc">أعمال المحاسبة والقوائم المالية</option>
+                <option value="تأسيس" data-i18n="optCorp">تأسيس الشركات والسجل التجاري</option>
+                <option value="استشارات" data-i18n="optConsult">دراسات جدوى واستشارات مالية</option>
+                <option value="أخرى" data-i18n="optOther">استشارة أخرى</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="clientMessage">تفاصيل الاستشارة أو الاستفسار</label>
-              <textarea id="clientMessage" class="textarea-glass" rows="3" placeholder="اكتب نبذة عن شركتك أو متطلباتك..."></textarea>
+              <label for="clientMessage" data-i18n="lblMsg">تفاصيل الاستشارة أو الاستفسار</label>
+              <textarea id="clientMessage" class="textarea-glass" rows="3" placeholder="اكتب نبذة عن شركتك أو متطلباتك..." data-i18n-placeholder="placeholderMsg"></textarea>
             </div>
 
             <button type="submit" class="btn-submit">
-              <span>إرسال الرسالة</span>
+              <span data-i18n="btnSendMsg">إرسال الرسالة</span>
               <i class="fa-solid fa-paper-plane"></i>
             </button>
 
@@ -523,22 +773,23 @@
           <img src="assets/logo-mark.png" alt="Saweras Ribbon Emblem">
         </div>
         <div class="brand-text">
-          <span class="brand-title">SAWERAS</span>
-          <span class="brand-subtitle">TAX & ACCOUNTING</span>
+          <span class="brand-title" data-i18n="brandTitle">SAWERAS</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">TAX & ACCOUNTING</span>
         </div>
       </div>
 
       <div class="footer-links">
-        <a href="#home">الرئيسية</a>
-        <a href="#about">من نحن</a>
-        <a href="#services">الخدمات</a>
-        <a href="#showcase">الأعمال</a>
-        <a href="#contact">تواصل معنا</a>
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#about" data-i18n="navAbout">من نحن</a>
+        <a href="#services" data-i18n="navServices">الخدمات</a>
+        <a href="#showcase" data-i18n="navShowcase">الأعمال</a>
+        <a href="#reviews" data-i18n="navReviews">الآراء</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Saweras Tax & Accounting — جميع الحقوق محفوظة | صُمم بأعلى معايير الإبداع والتطور</p>
+      <p data-i18n="footerRights">© 2026 Saweras Tax & Accounting — جميع الحقوق محفوظة | صُمم بأعلى معايير الإبداع والتطور</p>
     </div>
   </footer>
 
@@ -547,7 +798,8 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- Custom JavaScript File (Separated) -->
+  <!-- Localization Data & Main Application Scripts (Separated) -->
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
