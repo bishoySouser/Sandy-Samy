@@ -1,12 +1,12 @@
 /**
- * Saweras Tax & Accounting — Bilingual Localization Data (AR / EN)
+ * Sandy Samy Tax & Accounting — Bilingual Localization Data (AR / EN)
  */
 
 const translations = {
   ar: {
     // Meta & Brand
-    pageTitle: "Saweras Tax & Accounting | مكتب ساويرس للمحاسبة والضرائب",
-    brandTitle: "SAWERAS",
+    pageTitle: "Sandy Samy Tax & Accounting | مكتب ساندي سامي للمحاسبة والضرائب",
+    brandTitle: "SANDY SAMY",
     brandSubtitle: "TAX & ACCOUNTING",
     statusAvailable: "متاح لاستقبال الاستشارات",
 
@@ -20,23 +20,53 @@ const translations = {
     ctaConsultation: "طلب استشارة",
 
     // Hero Section
-    heroBadge: "مكتب ساويرس للمحاسبة والضرائب والتأسيس",
+    heroBadge: "مكتب ساندي سامي للمحاسبة والضرائب والتأسيس",
     heroTitlePrefix: "الريادة في الحلول المالية",
-    heroDesc: "شريكك المالي الاستراتيجي منذ 2020. نقدم خدمات محاسبية وضريبية متكاملة وتأسيس الشركات بأعلى معايير الدقة والامتثال القانوني للأفراد والشركات في مصر.",
+    heroDesc: "شريكك المالي الاستراتيجي. نقدم خدمات محاسبية وضريبية متكاملة وتأسيس الشركات بأعلى معايير الدقة والامتثال القانوني للأفراد والشركات في مصر.",
     btnExploreServices: "استكشف خدماتنا",
-    btnBookConsultation: "احجز استشارتك الآن",
+    btnBookConsultation: "تواصل عبر الواتساب",
+    btnWhatsappChat: "تواصل عبر الواتساب",
     metricSatisfaction: "نسبة رضا وتقييم العملاء",
     metricCompleted: "شركة وملف ضريبي منجز",
-    metricExperience: "خبرة متواصلة ومعتمدة",
+    metricExperience: "امتثال ودقة محاسبية 100%",
     chipRating: "تقييم 94%",
     chipSub: "أعلى تقييم موثوقية في مصر",
+    badgeTrust1Title: "محاسبون معتمدون",
+    badgeTrust1Sub: "خبرة وتراخيص رسمية",
+    badgeTrust2Title: "+500 شركة مسجلة",
+    badgeTrust2Sub: "شريك نجاح موثوق",
+
+    // Hero Executive Card
+    heroCardStatus: "خدمات استشارية ومحاسبية معتمدة",
+    heroCardTitle: "استشارات فورية عبر الواتساب",
+    heroCardDesc: "نساعدك في تأسيس شركتك، إدارة الدفاتر المحاسبية، وتقديم الإقرارات الضريبية بأعلى دقة وامتثال قانوني كامل.",
+    heroCheck1Title: "تأسيس وتسجيل الشركات",
+    heroCheck1Desc: "استخراج السجل التجاري والبطاقة الضريبية والتأمينات",
+    heroCheck2Title: "الضرائب والإقرارات الإلكترونية",
+    heroCheck2Desc: "فحص القيمة المضافة، كسب العمل، وضريبة الدخل",
+    heroCheck3Title: "إعداد ومراجعة القوائم المالية",
+    heroCheck3Desc: "دفاتر محاسبية متوافقة مع معايير المحاسبة المصرية",
+    heroCardCtaBtn: "تواصل مباشرة عبر الواتساب",
+    trustConfidential: "سرية تامة 100%",
+    trustInstant: "رد فوري ومباشر",
+    trustOnline: "أونلاين لجميع المحافظات",
+
+    // Value Accent Banner (Fusion Style)
+    valBanner1Title: "استشارة أولى مجانية",
+    valBanner1Desc: "جلسة تقييم شامل لملفك المالي",
+    valBanner2Title: "محاسبون معتمدون",
+    valBanner2Desc: "فريق مرخص ذو خبرة استثنائية",
+    valBanner3Title: "امتثال وأمان مالي 100%",
+    valBanner3Desc: "حماية كاملة من المخاطر والغرامات",
+    valBanner4Title: "سرعة ودقة استثنائية",
+    valBanner4Desc: "إنجاز الإقرارات والتأسيس في أسرع وقت",
 
     // About Section
     aboutTag: "من نحن",
     aboutTitle: "شريكك الموثوق <span class=\"text-gradient\">للنمو والامتثال المالي</span>",
     aboutDesc: "نمكن رواد الأعمال والشركات من التركيز على تطوير أعمالهم بينما نتولى نحن إدارة الجوانب المحاسبية والضريبية بدقة واحترافية متناهية.",
-    aboutCardTitle: "منذ عام 2020 نصنع الفارق في أعمالك",
-    aboutCardP1: "يقدم مكتب ساويرس (Saweras Tax & Accounting) حزمة متكاملة من الخدمات المحاسبية والاستشارات الضريبية وتأسيس الكيانات القانونية وفقاً لأحدث القوانين والأنظمة المعمول بها في جمهورية مصر العربية.",
+    aboutCardTitle: "رؤية حديثة تصنع الفارق في نجاح أعمالك",
+    aboutCardP1: "يقدم مكتب ساندي سامي (Sandy Samy Tax & Accounting) حزمة متكاملة وحديثة من الخدمات المحاسبية والاستشارات الضريبية وتأسيس الكيانات القانونية وفقاً لأحدث القوانين والأنظمة المعمول بها في جمهورية مصر العربية.",
     aboutFeature1: "فريق محاسبي واستشاري مرخص وذو كفاءة استثنائية",
     aboutFeature2: "امتثال ضريبي كامل يجنبك أي غرامات أو تأخيرات",
     aboutFeature3: "سرية تامة لحساباتك وبيانات شركتك المالية",
@@ -96,7 +126,7 @@ const translations = {
     shw1Title: "إعداد القوائم السنوية",
     shw1Desc: "تدقيق مالي شامل ومطابقة الإيرادات والتكاليف وتحديد صافي الأرباح بدقة متناهية.",
 
-    shw2Tag: "لوحة تحليلات ساويرس",
+    shw2Tag: "لوحة تحليلات ساندي سامي",
     shw2Title: "منظومة التقارير والضرائب الرقمية",
     shw2Desc: "لوحة تحكم ذكية ترصد الإقرارات الضريبية، الفواتير الإلكترونية، والتدفقات النقدية اللحظية لشركتك.",
 
@@ -106,17 +136,17 @@ const translations = {
 
     // Reviews Section
     reviewsTag: "آراء وتقييمات العملاء",
-    reviewsTitle: "ماذا يقول شركاؤنا عن <span class=\"text-gradient\">مكتب ساويرس؟</span>",
+    reviewsTitle: "ماذا يقول شركاؤنا عن <span class=\"text-gradient\">مكتب ساندي سامي؟</span>",
     reviewsDesc: "شهادات حقيقية وتوصيات موثقة من أصحاب الأعمال والشركات على صفحتنا الرسمية.",
     reviewsRatingSummary: "⭐ تقييم 5.0 من 5.0 | أكثر من 100 توصية معتمدة على فيسبوك",
-    recBadge: "يوصي بمكتب ساويرس للمحاسبة",
-    clientReplyPrefix: "رد مكتب ساويرس: ",
+    recBadge: "يوصي بمكتب ساندي سامي للمحاسبة",
+    clientReplyPrefix: "رد مكتب ساندي سامي: ",
 
     // Reviews items
     rev1Author: "Angi Samir Takla",
     rev1Role: "Partheno Media Advertising Agency",
     rev1Date: "نوفمبر 2023",
-    rev1Text: "Very expert and honest. Thanks Saweras and thanks Miss Ereeny for your support 🌹🌸 Keep it up ⭐⭐⭐",
+    rev1Text: "Very expert and honest. Thanks Sandy Samy and thanks Miss Ereeny for your support 🌹🌸 Keep it up ⭐⭐⭐",
     rev1Reply: "شكراً لثقة شركة Partheno Advertising Agency ودايماً عند حسن ظنكم ودعمكم بكافة الاستشارات.",
 
     rev2Author: "Daniel Mazhar Mashriki",
@@ -128,7 +158,7 @@ const translations = {
     rev3Author: "مينا عادل (Mina Adel)",
     rev3Role: "شركة خدمات سياحية",
     rev3Date: "نوفمبر 2023",
-    rev3Text: "تجربتي مع مكتب ساويرس كانت مميزة ومرضية للغاية. يترأس المكتب الأستاذة إيريني، وهو من أفضل المكاتب بالقاهرة. تميزوا بخدمات متكاملة واحترافية لتأسيس الشركات والدعم الدائم للإجابة على كل استفسار.",
+    rev3Text: "تجربتي مع مكتب ساندي سامي كانت مميزة ومرضية للغاية. يترأس المكتب الأستاذة إيريني، وهو من أفضل المكاتب بالقاهرة. تميزوا بخدمات متكاملة واحترافية لتأسيس الشركات والدعم الدائم للإجابة على كل استفسار.",
     rev3Reply: "شكراً على تقييمك الإيجابي الأكثر من رائع وتمنياتنا بالتوفيق في شركتكم السياحية الجديدة.",
 
     rev4Author: "محمد مجدي (Mohamed Magdi)",
@@ -161,43 +191,32 @@ const translations = {
     rev8Text: "من أحسن الشركات اللي ممكن الواحد يتعامل معاها، عندهم خبرة كبيرة جداً ومتابعتهم للعملاء بشكل منتظم.",
     rev8Reply: "شرفنا جداً بمساعدة ودعم حضرتك في كافة الاستشارات المحاسبية.",
 
-    // Contact Section
+    // Contact Section (WhatsApp Only)
     contactTag: "تواصل معنا",
-    contactTitle: "جاهزون لبدء <span class=\"text-gradient\">رحلة نجاحك المالي؟</span>",
-    contactDesc: "تواصل معنا اليوم لحجز جلستك الاستشارية وسيقوم مستشارنا المالي بالرد عليك فوراً.",
-    contactSideTitle: "تواصل مع مستشارك",
-    contactSideDesc: "مكتب ساويرس للمحاسبة والضرائب — يسعدنا استقبالكم في مقرنا أو تقديم الاستشارة عبر الهاتف والإنترنت.",
-    lblAddress: "العنوان والمقر:",
-    valAddress: "٤ عمار بن ياسر، أول سور الكلية الحربية من ناحية نادي الطيران، الدور الأول، مكتب ١٠٤ - النزهة، القاهرة",
-    lblPhone: "الهاتف المباشر:",
+    contactTitle: "تواصل مباشر وفوري <span class=\"text-gradient\">عبر الواتساب</span>",
+    contactDesc: "يسعدنا الرد على كافة استفساراتكم الضريبية والمحاسبية وتأسيس الشركات مباشرة عبر الواتساب.",
+    contactSideTitle: "مستشارك المالي والضريبي",
+    contactSideDesc: "مكتب ساندي سامي للمحاسبة والضرائب — نقدم استشاراتنا وخدماتنا المحاسبية والضريبية أونلاين لجميع المحافظات في مصر.",
+    lblWhatsapp: "واتساب مباشر:",
+    valPhone: "0127481763",
     lblEmail: "البريد الإلكتروني:",
-    lblHours: "ساعات العمل الرسمية:",
+    valEmail: "sandy.samy.youseff@gmail.com",
+    lblHours: "ساعات العمل والتواصل:",
     valHours: "من 10 صباحًا حتى 5 مساءً (الجمعة والسبت إجازة)",
-
-    formTitle: "أرسل استفسارك",
-    formDesc: "املأ البيانات التالية وسنعاود الاتصال بك خلال ساعات العمل.",
-    lblName: "الاسم بالكامل",
-    lblPhoneEmail: "رقم الهاتف / الواتساب أو البريد الإلكتروني",
-    lblService: "الخدمة المطلوبة",
-    lblMsg: "تفاصيل الاستشارة أو الاستفسار",
-    placeholderName: "مثال: أحمد محمود",
-    placeholderPhone: "مثال: 01222286622",
-    placeholderMsg: "اكتب نبذة عن شركتك أو متطلباتك...",
-    optTax: "الخدمات الضريبية والإقرارات",
-    optAcc: "أعمال المحاسبة والقوائم المالية",
-    optCorp: "تأسيس الشركات والسجل التجاري",
-    optConsult: "دراسات جدوى واستشارات مالية",
-    optOther: "استشارة أخرى",
-    btnSendMsg: "إرسال الرسالة",
+    btnWhatsappDirect: "ابدأ محادثة واتساب الآن",
+    whatsappBadgeStatus: "متاح الآن للرد السريع عبر الواتساب",
+    featureOnline: "خدمات أونلاين لجميع محافظات مصر",
+    featureConfidential: "سرية تامة وأمان مالي متكامل",
+    featureFreeConsult: "استشارة أولية سريعة عبر المحادثة",
 
     // Footer
-    footerRights: "© 2026 Saweras Tax & Accounting — جميع الحقوق محفوظة | صُمم بأعلى معايير الإبداع والتطور"
+    footerRights: "© 2026 Sandy Samy Tax & Accounting — جميع الحقوق محفوظة | صُمم بأعلى معايير الإبداع والتطور"
   },
 
   en: {
     // Meta & Brand
-    pageTitle: "Saweras Tax & Accounting | Chartered Accountants & Tax Advisors",
-    brandTitle: "SAWERAS",
+    pageTitle: "Sandy Samy Tax & Accounting | Chartered Accountants & Tax Advisors",
+    brandTitle: "SANDY SAMY",
     brandSubtitle: "TAX & ACCOUNTING",
     statusAvailable: "Available for Consultations",
 
@@ -211,23 +230,53 @@ const translations = {
     ctaConsultation: "Get Consultation",
 
     // Hero Section
-    heroBadge: "Saweras Tax, Accounting & Corporate Formation Firm",
+    heroBadge: "Sandy Samy Tax, Accounting & Corporate Formation Firm",
     heroTitlePrefix: "Leadership in Financial Solutions",
-    heroDesc: "Your strategic financial partner since 2020. Delivering end-to-end accounting, tax compliance, and business incorporation in Egypt with unmatched accuracy and integrity.",
+    heroDesc: "Your strategic financial partner. Delivering modern end-to-end accounting, tax compliance, and business incorporation in Egypt with unmatched accuracy and integrity.",
     btnExploreServices: "Explore Services",
-    btnBookConsultation: "Book Your Consultation",
+    btnBookConsultation: "Chat on WhatsApp",
+    btnWhatsappChat: "Chat on WhatsApp",
     metricSatisfaction: "Client Satisfaction Rate",
     metricCompleted: "Companies & Tax Files Managed",
-    metricExperience: "Years of Certified Excellence",
+    metricExperience: "100% Accuracy & Compliance",
     chipRating: "94% Rating",
     chipSub: "Top Trust & Reliability in Egypt",
+    badgeTrust1Title: "Certified Accountants",
+    badgeTrust1Sub: "Fully Licensed & Regulated",
+    badgeTrust2Title: "500+ Registered Firms",
+    badgeTrust2Sub: "Trusted Financial Partner",
+
+    // Hero Executive Card
+    heroCardStatus: "Regulated Tax & Accounting Advisory",
+    heroCardTitle: "Instant Advisory via WhatsApp",
+    heroCardDesc: "We assist with corporate incorporation, ledger bookkeeping, and periodic tax filing with utmost precision and full statutory compliance.",
+    heroCheck1Title: "Company Incorporation & Setup",
+    heroCheck1Desc: "Commercial register, tax card & social insurance filings",
+    heroCheck2Title: "Tax Compliance & Electronic Returns",
+    heroCheck2Desc: "VAT filings, payroll taxes, and income tax examinations",
+    heroCheck3Title: "Financial Statements & Bookkeeping",
+    heroCheck3Desc: "Ledger management aligned with Egyptian Accounting Standards",
+    heroCardCtaBtn: "Chat Directly on WhatsApp",
+    trustConfidential: "100% Confidential",
+    trustInstant: "Prompt Direct Response",
+    trustOnline: "Online Across Egypt",
+
+    // Value Accent Banner (Fusion Style)
+    valBanner1Title: "Free Initial Consultation",
+    valBanner1Desc: "Comprehensive financial assessment",
+    valBanner2Title: "Chartered Accountants",
+    valBanner2Desc: "Licensed & highly experienced team",
+    valBanner3Title: "100% Tax & Legal Compliance",
+    valBanner3Desc: "Complete protection from penalties",
+    valBanner4Title: "Fast & Dedicated Delivery",
+    valBanner4Desc: "Prompt filing & hassle-free incorporation",
 
     // About Section
     aboutTag: "About Us",
     aboutTitle: "Your Trusted Partner for <span class=\"text-gradient\">Growth & Compliance</span>",
     aboutDesc: "We empower founders and corporations to focus on growing their core business while we handle all complex accounting, tax, and legal requirements.",
-    aboutCardTitle: "Making a Real Impact in Your Business Since 2020",
-    aboutCardP1: "Saweras Tax & Accounting provides comprehensive advisory, bookkeeping, and company incorporation services compliant with the latest Egyptian laws and regulations.",
+    aboutCardTitle: "A Modern Vision Making a Real Impact in Your Business",
+    aboutCardP1: "Sandy Samy Tax & Accounting provides comprehensive, modern advisory, bookkeeping, and company incorporation services compliant with the latest Egyptian laws and regulations.",
     aboutFeature1: "Certified chartered accountants & senior tax consultants",
     aboutFeature2: "Full tax compliance preventing penalties and audits",
     aboutFeature3: "Complete confidentiality & enterprise-grade data security",
@@ -287,7 +336,7 @@ const translations = {
     shw1Title: "Annual Financial Reports",
     shw1Desc: "Comprehensive auditing, revenue and cost reconciliation, and accurate net profit assessments.",
 
-    shw2Tag: "Saweras Smart Analytics",
+    shw2Tag: "Sandy Samy Smart Analytics",
     shw2Title: "Digital Tax & Reporting Dashboard",
     shw2Desc: "Smart control center monitoring e-invoicing, periodic tax liabilities, and real-time cash flows.",
 
@@ -297,17 +346,17 @@ const translations = {
 
     // Reviews Section
     reviewsTag: "Client Reviews & Recommendations",
-    reviewsTitle: "What Our Partners Say About <span class=\"text-gradient\">Saweras Firm</span>",
+    reviewsTitle: "What Our Partners Say About <span class=\"text-gradient\">Sandy Samy Firm</span>",
     reviewsDesc: "Authentic feedback and verified Facebook recommendations from founders and business owners across Egypt.",
     reviewsRatingSummary: "⭐ 5.0 out of 5.0 Rating | 100+ Verified Facebook Recommendations",
-    recBadge: "Recommends Saweras Tax & Accounting",
-    clientReplyPrefix: "Saweras Team Reply: ",
+    recBadge: "Recommends Sandy Samy Tax & Accounting",
+    clientReplyPrefix: "Sandy Samy Team Reply: ",
 
     // Reviews items
     rev1Author: "Angi Samir Takla",
     rev1Role: "Partheno Media Advertising Agency",
     rev1Date: "Nov 2023",
-    rev1Text: "Very expert and honest. Thanks Saweras and thanks Miss Ereeny for your support 🌹🌸 Keep it up ⭐⭐⭐",
+    rev1Text: "Very expert and honest. Thanks Sandy Samy and thanks Miss Ereeny for your support 🌹🌸 Keep it up ⭐⭐⭐",
     rev1Reply: "Thank you Partheno Advertising Agency for your trust. Always committed to supporting your success.",
 
     rev2Author: "Daniel Mazhar Mashriki",
@@ -319,7 +368,7 @@ const translations = {
     rev3Author: "Mina Adel",
     rev3Role: "Tourism & Travel Agency",
     rev3Date: "Nov 2023",
-    rev3Text: "My experience with Saweras Tax & Accounting was outstanding. Managed by Miss Ereeny, this is undoubtedly one of the finest firms in Cairo. They provided comprehensive corporate setup support and immediate guidance on every step.",
+    rev3Text: "My experience with Sandy Samy Tax & Accounting was outstanding. Managed by Miss Ereeny, this is undoubtedly one of the finest firms in Cairo. They provided comprehensive corporate setup support and immediate guidance on every step.",
     rev3Reply: "Thank you for the wonderful feedback! Best wishes for your new tourism venture.",
 
     rev4Author: "Mohamed Magdi",
@@ -352,36 +401,25 @@ const translations = {
     rev8Text: "One of the finest teams you can ever work with. Vast expertise and reliable, consistent client follow-up.",
     rev8Reply: "Honored to support you across all your accounting and corporate inquiries.",
 
-    // Contact Section
+    // Contact Section (WhatsApp Only)
     contactTag: "Contact Us",
-    contactTitle: "Ready to Start Your <span class=\"text-gradient\">Financial Success Journey?</span>",
-    contactDesc: "Reach out to schedule your consultation session today and our senior advisor will connect with you promptly.",
-    contactSideTitle: "Connect With Your Advisor",
-    contactSideDesc: "Saweras Tax & Accounting — We welcome you at our Cairo headquarters or via phone and digital meetings.",
-    lblAddress: "Headquarters Address:",
-    valAddress: "4 Ammar Ibn Yasser St., First Military Academy Wall near Aero Club, 1st Floor, Office 104 - El Nozha, Cairo, Egypt",
-    lblPhone: "Direct Phone:",
+    contactTitle: "Instant Direct Contact <span class=\"text-gradient\">via WhatsApp</span>",
+    contactDesc: "We are available to answer all your tax, accounting, and business incorporation inquiries directly on WhatsApp.",
+    contactSideTitle: "Your Financial & Tax Advisor",
+    contactSideDesc: "Sandy Samy Tax & Accounting — Fast and direct digital advisory services via WhatsApp for businesses and individuals across Egypt.",
+    lblWhatsapp: "Direct WhatsApp:",
+    valPhone: "0127481763",
     lblEmail: "Email Address:",
-    lblHours: "Working Hours:",
+    valEmail: "sandy.samy.youseff@gmail.com",
+    lblHours: "Working & Support Hours:",
     valHours: "Sunday – Thursday: 10:00 AM – 5:00 PM (Fri & Sat closed)",
-
-    formTitle: "Send Us a Message",
-    formDesc: "Fill in the details below and we will get back to you during business hours.",
-    lblName: "Full Name",
-    lblPhoneEmail: "Phone Number / WhatsApp or Email",
-    lblService: "Requested Service",
-    lblMsg: "Consultation Details",
-    placeholderName: "e.g. Ahmed Mahmoud",
-    placeholderPhone: "e.g. +20 12 22286622",
-    placeholderMsg: "Briefly describe your company or requirements...",
-    optTax: "Tax Advisory & Filings",
-    optAcc: "Accounting & Financial Statements",
-    optCorp: "Company Formation & Registration",
-    optConsult: "Feasibility Studies & Advisory",
-    optOther: "Other Consultation",
-    btnSendMsg: "Send Message",
+    btnWhatsappDirect: "Start WhatsApp Chat Now",
+    whatsappBadgeStatus: "Available Now for Quick WhatsApp Response",
+    featureOnline: "Online Services Across All Governorates",
+    featureConfidential: "Strict Confidentiality & Compliance",
+    featureFreeConsult: "Fast Initial Advisory via Chat",
 
     // Footer
-    footerRights: "© 2026 Saweras Tax & Accounting — All Rights Reserved | Designed with Modern Standards"
+    footerRights: "© 2026 Sandy Samy Tax & Accounting — All Rights Reserved | Designed with Modern Standards"
   }
 };

@@ -1,5 +1,5 @@
 /**
- * Saweras Tax & Accounting — Interactive UI & Localization Engine
+ * Sandy Samy Tax & Accounting — Interactive UI & Localization Engine
  * Cosmic Dark Glassmorphism Experience
  */
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * 1. Localization Engine (AR / EN)
  */
-let currentLang = localStorage.getItem('saweras_lang') || 'ar';
+let currentLang = localStorage.getItem('sandysamy_lang') || localStorage.getItem('saweras_lang') || 'ar';
 
 function initLocalization() {
   const toggleBtn = document.getElementById('langToggle');
@@ -27,7 +27,7 @@ function initLocalization() {
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
       currentLang = currentLang === 'ar' ? 'en' : 'ar';
-      localStorage.setItem('saweras_lang', currentLang);
+      localStorage.setItem('sandysamy_lang', currentLang);
       applyLanguage(currentLang);
     });
   }
@@ -262,8 +262,8 @@ function initContactForm() {
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
       const successMsg = isAr
-        ? 'تم استلام رسالتك بنجاح! سيتواصل معك مستشار مكتب ساويرس في أقرب وقت.'
-        : 'Your message has been received! A Saweras advisor will contact you shortly.';
+        ? 'تم استلام رسالتك بنجاح! سيتواصل معك مستشار مكتب ساندي سامي في أقرب وقت.'
+        : 'Your message has been received! A Sandy Samy advisor will contact you shortly.';
       showAlert(successMsg, 'success');
       form.reset();
 
